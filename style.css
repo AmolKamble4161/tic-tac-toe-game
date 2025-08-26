@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #7DCFB6, #1D4E89);
+    text-align: center;
+    background-attachment: fixed;
+}
+
+main {
+    margin: 1rem 0;
+}
+
+main h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #363732;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    background-color: #53D8FB;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 8vmin;
+    color: #363732;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.06);
+    border: 4px solid #ffffff;
+}
+
+.box:disabled {
+    cursor: not-allowed;
+    transform: none;
+    border: none;
+}
+
+
+#resetBtn,
+#newGameBtn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    background: #363732;
+    color: #DCE1E9;
+    transition: 0.3s;
+}
+
+#resetBtn:hover,
+#newGameBtn:hover {
+    border: 1px solid #fff;
+}
+
+#msg {
+    color: #DCE1E9;
+    font-size: 5vmin;
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+.ex {
+    color: #A855F7;
+}
+
+.zero {
+    color: #FF579F;
+}
+
+.winBlink {
+    animation: blink-bg 0.5s infinite;
+}
+
+@keyframes blink-bg {
+    0%,
+    100% {
+        /* red */
+        background-color: #ff4d4d00;
+    }
+
+    50% {
+        /* green */
+        background-color: rgba(0, 128, 0, 0.498);
+    }
+}
+
+@media (max-width: 425px) {
+    main {
+        margin: 1rem;
+    }
+
+    main h1 {
+        font-size: 3rem;
+    }
+
+    #msg {
+        font-size: 7vmin;
+    }
+
+    #resetBtn,
+    #newGameBtn {
+        font-size: 1rem;
+    }
+
+    .container {
+        height: 60vh;
+    }
+
+    .box {
+        height: 23vmin;
+        width: 23vmin;
+    }
+}
