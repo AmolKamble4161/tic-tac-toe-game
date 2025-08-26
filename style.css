@@ -139,5 +139,7 @@ main h1 {
     .box {
         height: 23vmin;
         width: 23vmin;
+        font-size: 10vmin;
     }
+
 }
