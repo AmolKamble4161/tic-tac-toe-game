@@ -23,7 +23,7 @@ boxes.forEach((box) => {
             box.classList.add("ex");
             
         }else{
-            box.innerText = '0';
+            box.innerText = 'O';
             trunX = true;
             box.classList.add("zero");
         }
@@ -81,4 +81,5 @@ const resetGame = () => {
 }
 
 resetBtn.addEventListener('click', resetGame);
+
 newGameBtn.addEventListener('click', resetGame);
