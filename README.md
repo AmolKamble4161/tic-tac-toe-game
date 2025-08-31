@@ -33,5 +33,4 @@ Play against a friend in classic 3x3 grid style.
 
 ## 🔧 URL of Game
 1. Clone this repository:
-   ```bash
    https://amolkamble4161.github.io/tic-tac-toe-game/
